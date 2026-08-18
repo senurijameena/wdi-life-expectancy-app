@@ -63,7 +63,4 @@ Interactive Streamlit app — *Coming soon*
 
 ---
 
-## 👩‍💻 Author
 
-Department of Statistics and Computer Science
-University of Kelaniya | 2024/2025
