@@ -47,7 +47,7 @@ This project uses data science to answer:
 | Middle-Income Developing | 🇱🇰 Sri Lanka, India, Philippines |
 | Low-Income Developing | Nigeria, Ethiopia, Afghanistan |
 
-### 🇱🇰 Sri Lanka
+### Sri Lanka
 
 Sri Lanka ranks in the **Middle-Income Developing** cluster yet achieves a life 
 expectancy **+6.9 years above** the South Asian average — driven by strong 
