@@ -48,7 +48,6 @@ if df_cluster is None:
     st.stop()
 
 
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/8/87/Color_icon_blue.png", width=30)
 st.sidebar.title("🌍 WDI Dashboard")
 st.sidebar.markdown("World Bank Development Indicators 2000–2025")
 st.sidebar.divider()
