@@ -1,66 +1,91 @@
-# 🌍 World Development Indicators — Life Expectancy Prediction & Clustering
+# 🌍 Predicting Life Expectancy Using World Development Indicators
 
-A Data Science project analyzing global development patterns and predicting life expectancy using World Bank data.
+A machine learning project that predicts country-level life expectancy and 
+identifies global development clusters using World Bank data (2000–2025).
 
 ---
 
-## 📌 Overview
+## 🎯 What This Project Does
 
-This project applies machine learning to the **World Bank World Development Indicators (WDI)** dataset to:
-- **Predict life expectancy** using development indicators — *Regression*
-- **Group countries** by development profile — *Clustering*
-- **Analyze Sri Lanka's position** against global and regional peers
-
-Completed as part of **COSC 44343 / BECS 44613 — Data Science**
-**University of Kelaniya** | Academic Year 2024/2025
+Life expectancy varies by 30 years between the world's richest and poorest nations.
+This project uses data science to answer:
+- Which development factors most influence how long people live?
+- Can we accurately predict a country's life expectancy?
+- Where does Sri Lanka stand compared to global and regional peers?
 
 ---
 
 ## 📊 Dataset
 
-| Detail | Info |
+| | |
 |---|---|
-| Source | [World Bank WDI — Kaggle](https://www.kaggle.com/datasets/theworldbank/world-development-indicators) |
-| Coverage | 217 countries, 2000–2025 |
-| Raw size | ~5.6 million rows |
-| After preprocessing | ~4,000 rows, 9 features |
-
----
-
-## 🔧 Techniques Used
-
-| Technique | Purpose |
-|---|---|
-| Regression (XGBoost) | Predict life expectancy |
-| K-Means Clustering | Group countries by development level |
-| PCA | Visualize clusters in 2D |
-| GridSearchCV | Hyperparameter tuning |
+| **Source** | [World Bank World Development Indicators](https://www.kaggle.com/datasets/theworldbank/world-development-indicators) |
+| **Coverage** | 217 countries, 2000–2025 |
+| **Target variable** | Life Expectancy at Birth |
+| **Key features** | GDP, Infant Mortality, Health Expenditure, Literacy Rate, CO2 Emissions, Unemployment, Internet Usage |
 
 ---
 
 ## 📈 Results
 
-| Model | R² Score |
+### Regression — Life Expectancy Prediction
+
+| Model | R² | RMSE |
+|---|---|---|
+| Linear Regression | 0.8777 | 3.21 yrs |
+| Random Forest | 0.9691 | 1.61 yrs |
+| **XGBoost (Best)** | **0.9752** | **1.56 yrs** |
+
+**#1 most important feature:** Infant Mortality Rate
+
+### Clustering — Country Development Groups
+
+| Cluster | Countries |
 |---|---|
-| Linear Regression | ~0.82 |
-| Random Forest | ~0.94 |
-| **XGBoost (Best)** | **~0.96** |
+| Advanced Economies | USA, Germany, Japan |
+| High-Income Developing | China, Brazil, Malaysia |
+| Middle-Income Developing | 🇱🇰 Sri Lanka, India, Philippines |
+| Low-Income Developing | Nigeria, Ethiopia, Afghanistan |
 
-- **Top feature:** Infant Mortality Rate
-- 🇱🇰 **Sri Lanka** → Middle-Income Developing cluster, above cluster average in life expectancy
+### 🇱🇰 Sri Lanka
 
----
-
-## 🛠️ Technologies
-
-Python, Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Google Colab
+Sri Lanka ranks in the **Middle-Income Developing** cluster yet achieves a life 
+expectancy **+6.9 years above** the South Asian average — driven by strong 
+literacy rates and healthcare investment relative to GDP.
 
 ---
 
-## 🚀 Web App
+## 🖥️ Dashboard
 
-Interactive Streamlit app — *Coming soon*
+👉 **[Live App](https://your-app-link.streamlit.app)**
+
+Four pages:
+- **Overview** — global snapshot and Sri Lanka spotlight
+- **Explore** — indicator comparisons and correlation heatmap
+- **Predict** — enter any country's indicators and get a life expectancy prediction
+- **Compare** — side-by-side country comparison with trend lines
 
 ---
 
+## 🛠️ Tech Stack
 
+Python · Pandas · Scikit-learn · XGBoost · Matplotlib · Seaborn · Streamlit · Google Colab
+
+---
+
+## 👥 Team
+
+- Senuri De Silva
+- Sanduni Jayasinghe
+- Janani Gunathilaka
+
+**Department of Statistics and Computer Science
+University of Kelaniya | 2024/2025**
+
+---
+
+## 📚 References
+
+- World Bank. (2025). *World Development Indicators*. https://data.worldbank.org
+- Chen & Guestrin. (2016). *XGBoost: A Scalable Tree Boosting System*
+- Pedregosa et al. (2011). *Scikit-learn: Machine Learning in Python*
