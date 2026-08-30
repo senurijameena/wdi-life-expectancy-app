@@ -57,7 +57,7 @@ literacy rates and healthcare investment relative to GDP.
 
 ## 🖥️ Dashboard
 
-👉 **[Live App](https://your-app-link.streamlit.app)**
+👉 **[Live App](https://wdi-life-expectancy-app-brbcunrvtyzo4ugmgqwmpu.streamlit.app/)**
 
 Four pages:
 - **Overview** — global snapshot and Sri Lanka spotlight
