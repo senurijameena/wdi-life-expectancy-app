@@ -67,9 +67,37 @@ Four pages:
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies
 
-Python · Pandas · Scikit-learn · XGBoost · Matplotlib · Seaborn · Streamlit · Google Colab
+| Category | Tools |
+|---|---|
+| Language | Python 3 |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn, XGBoost |
+| Clustering | K-Means, PCA |
+| Dashboard | Streamlit |
+| Environment | Google Colab |
+
+---
+
+## 📊 Visualizations
+
+| # | Plot | Purpose |
+|---|---|---|
+| 1 | Missing Values Heatmap | Identify data gaps across indicators |
+| 2 | Life Expectancy Distribution | Global spread of life expectancy |
+| 3 | GDP vs Life Expectancy | Wealth vs health relationship by region |
+| 4 | Correlation Matrix | Relationships between all indicators |
+| 5 | Sri Lanka Trend Line | Sri Lanka vs South Asia vs Global |
+| 6 | Income Group Boxplot | Life expectancy by income level |
+| 7 | Feature Importance | Which indicators matter most |
+| 8 | Actual vs Predicted | Regression model accuracy |
+| 9 | Elbow & Silhouette | Optimal cluster selection |
+| 10 | PCA Clusters | Country clusters visualized in 2D |
+| 11 | Model Comparison | R² scores across all models |
+| 12 | RMSE Comparison | Error rates across all models |
+| 13 | Clustering Metrics | Silhouette, Davies-Bouldin, Calinski-Harabasz |
 
 ---
 
@@ -80,7 +108,7 @@ Python · Pandas · Scikit-learn · XGBoost · Matplotlib · Seaborn · Streamli
 - Janani Gunathilaka
 
 **Department of Statistics and Computer Science
-University of Kelaniya | 2024/2025**
+University of Kelaniya**
 
 ---
 
